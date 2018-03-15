@@ -1,7 +1,7 @@
 import  { FILL_ME } from '../constants';
 
 const initial = {
-  listItems: []
+  items: []
 };
 
 export default function(state=initial, action) {

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux'
 
 class App extends Component {
 
@@ -11,17 +12,20 @@ class App extends Component {
     return (
       <div className='app'>
         Hello Taimoor
+        <div className="container">
+          Hello to you as well.
+        </div>
       </div>
     );
   }
 }
 
-App.PropTypes = {
+App.propTypes = {
 }
 
 function mapStateToProps(state) {
   return {
-    key: null
+    testReducer: state.testReducer
   };
 };
 
