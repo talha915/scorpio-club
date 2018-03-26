@@ -1,10 +1,14 @@
+// ########## Import Dependencies Here ##########
 import ReactDOM from 'react-dom';
 import React from 'react';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 
-import rootReducer from './reducers'
-import App from './components/App'
+// ########## Import Containers Here ##########
+
+// ########## Import Components Here ##########
+import rootReducer from './reducers';
+import App from './components/App';
 
 const store = createStore(
   rootReducer,

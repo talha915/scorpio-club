@@ -1,0 +1,28 @@
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: $background-image-color url('./images/hero.jpg') no-repeat center;
+  background-size: cover;
+  .wrapper{
+    @include wrapper($wrapper-width);
+    .hero-content-container {
+      margin: auto;
+      .hero-logo {
+        display: block;
+        margin: 0px auto;
+      }
+      .hero-heading {
+        @include H1(center, $white);
+      }
+      .hero-subheading {
+        @include H3(center, $white);
+      }
+      .hero-text {
+        @include H4(center, $white);
+      }
+      .hero-button {
+        @include scorpio-button();
+      }
+    }
+  }
+}
