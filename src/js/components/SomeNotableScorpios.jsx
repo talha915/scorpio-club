@@ -21,16 +21,13 @@ class SomeNotableScorpios extends Component {
           <h4 className="some-notable-scorpios-subheading">With our drag and drop system you can create pages in minutes!</h4>
           <div className="some-notable-scorpios-collection-container">
             <div className="some-notable-scorpios-collection-row">
-              <img className="" src="./images/giphy.gif" />
-              <img className="" src="./images/giphy.gif" />
-              <img className="" src="./images/giphy.gif" />
-              <img className="" src="./images/giphy.gif" />
-            </div>
-            <div className="some-notable-scorpios-collection-row">
-              <img className="" src="./images/giphy.gif" />
-              <img className="" src="./images/giphy.gif" />
-              <img className="" src="./images/giphy.gif" />
-              <img className="" src="./images/giphy.gif" />
+              <img className="some-notable-scorpios-collection-image" src="./images/Bill Gates.jpg" />
+              <img className="some-notable-scorpios-collection-image" src="./images/Bill Gates.jpg" />
+              <img className="some-notable-scorpios-collection-image" src="./images/Bill Gates.jpg" />
+              <img className="some-notable-scorpios-collection-image" src="./images/Bill Gates.jpg" />
+              <img className="some-notable-scorpios-collection-image" src="./images/Bill Gates.jpg" />
+              <img className="some-notable-scorpios-collection-image" src="./images/Bill Gates.jpg" />
+
             </div>
             <button className="some-notable-scorpios-button">See More</button>
           </div>

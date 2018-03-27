@@ -6,10 +6,30 @@
   .wrapper {
     @include wrapper($wrapper-width);
     .lets-be-in-touch-heading {
-      @include H3(center, $accent-color);
+      @include H3(center, $accent-color, 60px);
     }
     .lets-be-in-touch-subheading {
-      @include H4(center, $accent-color);
+      @include H4(center, $accent-color, 30px);
+    }
+    .form{
+      padding-left: 350px;
+      margin-top: 30px;
+      
+    }
+    .button {
+      @include scorpio-button(#fdba26,#534741);
+    }
+    .form-button{
+      color: #534741;
+      background-color: #fdba26;
+      height: 35px;
+      width: 120px;
+      margin-top: 5px;
+      border: 1px solid #fdba26;
+    }
+    .inputheight{
+      height: 35px;
+      text-align: center;
     }
   }
 }

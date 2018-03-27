@@ -4,7 +4,7 @@
   .wrapper {
     @include wrapper($wrapper-width);
     .promo-heading {
-      @include H3(center, $primary-color);
+      @include H3(center, $primary-color, 60px);
     }
     .promo-content-container {
       width: 100%;
@@ -23,7 +23,7 @@
         height: 250px;
         float: left;
         .promo-text {
-          @include H4(left, $black);
+          @include H4(left, $black, 30px);
           padding: 70px 150px;;
         }
       }

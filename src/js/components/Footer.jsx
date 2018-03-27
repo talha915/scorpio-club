@@ -18,8 +18,8 @@ class Footer extends Component {
       <section id="footer">
         <div className="wrapper">
           <div className="footer-container-left">
-            <p className="footer-heading">Scorpio Club</p>
-            <p className="footer-disclaimer">© 2018 Scorpio Club | All rights reserved.</p>
+            <p className="footer-heading">Scorpio<br></br> Club</p>
+            <p className="footer-disclaimerleft">© 2018 Scorpio Club | All rights reserved.</p>
           </div>
           <div className="footer-container-right">
             <p className="footer-heading"></p>

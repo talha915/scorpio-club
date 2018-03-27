@@ -6,29 +6,32 @@
   width: $w;
 }
 
-@mixin scorpio-button() {
+@mixin scorpio-button($color,$textcolor) {
   width: 150px;
   height: 50px;
   background-color: $white;
-  border-radius: 15px;
+  border-radius: 25px;
   box-shadow: 4px 4px 10px $accent-color;
+  background-color: $color;
   margin: 60px auto;
   display: block;
   text-transform: uppercase;
+  color: $textcolor;
   font-family: $font-family;
   font-weight: 700;
   font-size: 13px;
-  color: $black;
+  margin-top: 20px;
   letter-spacing: 0.1em;
+  border: 1px solid black;
 }
 
 // ########## All Text Mixins Here ##########
 @mixin H1($t-a, $c) {
   font-family: $font-family;
-  font-weight: 700;
-  font-size: 36px;
+  font-weight: 600;
+  font-size: 70px;
   margin: 0px;
-  padding-top: 60px;
+  padding-top: 10px;
   text-align: $t-a;
   color: $c;
   letter-spacing: 0.05em;
@@ -45,23 +48,23 @@
   letter-spacing: 0.05em;
 }
 
-@mixin H3($t-a, $c) {
+@mixin H3($t-a, $c, $padding-top) {
   font-family: $font-family;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 25px;
   margin: 0px;
-  padding-top: 60px;
+  padding-top: $padding-top;
   text-align: $t-a;
   color: $c;
   letter-spacing: 0.05em;
 }
 
-@mixin H4($t-a, $c) {
+@mixin H4($t-a, $c, $padding-top) {
   font-family: $font-family;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 20px;
   margin: 0px;
-  padding-top: 0px;
+  padding-top: $padding-top;
   text-align: $t-a;
   color: $c;
   letter-spacing: 0.05em;

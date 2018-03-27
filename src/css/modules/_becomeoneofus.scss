@@ -6,13 +6,14 @@
   .wrapper {
     @include wrapper($wrapper-width);
     .become-one-of-us-heading {
-      @include H3(center, $primary-color);
+      @include H3(center, $primary-color, 60px);
     }
     .become-one-of-us-subheading {
-      @include H4(center, $primary-color);
+      @include H4(center, $primary-color, 30px);
     }
     .become-one-of-us-button {
-      @include scorpio-button();
+      @include scorpio-button(#534741,#fdba26);
+      margin-top: 60px;
     }
   }
 }

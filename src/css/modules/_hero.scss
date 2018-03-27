@@ -10,18 +10,19 @@
       .hero-logo {
         display: block;
         margin: 0px auto;
+        padding-top: 5%;  
       }
       .hero-heading {
         @include H1(center, $white);
       }
       .hero-subheading {
-        @include H3(center, $white);
+        @include H3(center, $white, 30px);
       }
       .hero-text {
-        @include H4(center, $white);
+        @include H4(center, $white, 10px);
       }
       .hero-button {
-        @include scorpio-button();
+        @include scorpio-button(#ffffff,#333);
       }
     }
   }

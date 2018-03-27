@@ -21,17 +21,14 @@ class FromOurScorpios extends Component {
           <h4 className="from-our-scorpios-subheading">With our drag and drop system you can create pages in minutes!</h4>
           <div className="from-our-scorpios-collection-container">
             <div className="from-our-scorpios-collection-row">
-              <img className="" src="./images/giphy.gif" />
-              <img className="" src="./images/giphy.gif" />
-              <img className="" src="./images/giphy.gif" />
-              <img className="" src="./images/giphy.gif" />
+              <img className="from-our-scorpios-collection-image" src="./images/Bill Gates.jpg" />  
+              <img className="from-our-scorpios-collection-image" src="./images/Bill Gates.jpg" />
+              <img className="from-our-scorpios-collection-image" src="./images/Bill Gates.jpg" />
+              <img className="from-our-scorpios-collection-image" src="./images/Bill Gates.jpg" />
+              <img className="from-our-scorpios-collection-image" src="./images/Bill Gates.jpg" />
+              <img className="from-our-scorpios-collection-image" src="./images/Bill Gates.jpg" />
             </div>
-            <div className="from-our-scorpios-collection-row">
-              <img className="" src="./images/giphy.gif" />
-              <img className="" src="./images/giphy.gif" />
-              <img className="" src="./images/giphy.gif" />
-              <img className="" src="./images/giphy.gif" />
-            </div>
+            
             <button className="from-our-scorpios-button">See More</button>
           </div>
         </div>
@@ -50,3 +47,12 @@ function mapStateToProps(state) {
 };
 
 export default connect(mapStateToProps, {})(FromOurScorpios);
+
+/*
+<div className="from-our-scorpios-collection-row">
+              <img className="" src="./images/giphy.gif" />
+              <img className="" src="./images/giphy.gif" />
+              <img className="" src="./images/giphy.gif" />
+              <img className="" src="./images/giphy.gif" />
+            </div>
+            */
