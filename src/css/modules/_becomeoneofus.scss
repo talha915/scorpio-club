@@ -12,7 +12,7 @@
       @include H4(center, $primary-color, 30px);
     }
     .become-one-of-us-button {
-      @include scorpio-button(#534741,#fdba26);
+      @include scorpio-button(#534741,#fdba26,#534741);
       margin-top: 60px;
     }
   }

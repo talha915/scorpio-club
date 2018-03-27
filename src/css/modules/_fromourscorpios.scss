@@ -15,7 +15,7 @@
       padding-top: 60px;
       .from-our-scorpios-button {
 
-        @include scorpio-button(#ffffff,#333);
+        @include scorpio-button(#ffffff,#333,ffffff);
         margin-top: 60px;
       }
 

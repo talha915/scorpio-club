@@ -6,7 +6,7 @@ import { connect } from 'react-redux'
 // ########## Import Containers Here ##########
 
 // ########## Import Components Here ##########
-
+import App from './App.jsx'
 class Hero extends Component {
 
   constructor() {
@@ -14,14 +14,15 @@ class Hero extends Component {
   }
 
   render() {
+    const data= this.props.heroKey;
     return (
       <section id="hero">
         <div className="wrapper">
           <div className="hero-content-container">
             <img className="hero-logo" src="./images/scorpio-club-white.png" />
-            <h1 className="hero-heading">Scorpio Club</h1>
-            <h3 className="hero-subheading">Scorpio is the best sign ever!</h3>
-            <h4 className="hero-text">Join us to know all the reasons WHY!</h4>
+            <h1 className="hero-heading">{data.heading}</h1>
+            <h3 className="hero-subheading">{data.subheading}</h3>
+            <h4 className="hero-text">{data.subheadingmessage}</h4>
             <button className="hero-button">Let Me In</button>
           </div>
         </div>

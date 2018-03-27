@@ -2,9 +2,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux'
-
+import Data from '../../data/Data.js'
 // ########## Import Containers Here ##########
-
+import App from './App';
 // ########## Import Components Here ##########
 
 class Footer extends Component {
@@ -14,16 +14,17 @@ class Footer extends Component {
   }
 
   render() {
+    const data= this.props.footerKey;
     return (
       <section id="footer">
         <div className="wrapper">
           <div className="footer-container-left">
-            <p className="footer-heading">Scorpio<br></br> Club</p>
-            <p className="footer-disclaimerleft">© 2018 Scorpio Club | All rights reserved.</p>
+            <p className="footer-heading">{data.heading}</p><br></br><br></br>
+            <p className="footer-disclaimerleft">{data.disclaimer}</p>
           </div>
           <div className="footer-container-right">
             <p className="footer-heading"></p>
-            <div className="footer-disclaimer">
+            <div className="footer-disclaimer"><br></br><br></br><br></br>
               <a href="#" target="_blank"><i className="fab fa-facebook fa-2x"></i></a>
               <a href="#" target="_blank"><i className="fab fa-twitter-square fa-2x"></i></a>
               <a href="#" target="_blank"><i className="fab fa-instagram fa-2x"></i></a>

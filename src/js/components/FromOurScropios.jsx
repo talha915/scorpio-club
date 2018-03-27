@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux'
-
+import App from './App.jsx';
 // ########## Import Containers Here ##########
 
 // ########## Import Components Here ##########
@@ -14,11 +14,12 @@ class FromOurScorpios extends Component {
   }
 
   render() {
+    const data= this.props.fromscorpioKey;
     return (
       <section id="from-our-scorpios">
         <div className="wrapper">
-          <h3 className="from-our-scorpios-heading">From Our Scorpios</h3>
-          <h4 className="from-our-scorpios-subheading">With our drag and drop system you can create pages in minutes!</h4>
+          <h3 className="from-our-scorpios-heading">{data.heading}</h3>
+          <h4 className="from-our-scorpios-subheading">{data.subheading}</h4>
           <div className="from-our-scorpios-collection-container">
             <div className="from-our-scorpios-collection-row">
               <img className="from-our-scorpios-collection-image" src="./images/Bill Gates.jpg" />  

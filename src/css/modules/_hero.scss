@@ -22,7 +22,7 @@
         @include H4(center, $white, 10px);
       }
       .hero-button {
-        @include scorpio-button(#ffffff,#333);
+        @include scorpio-button(#ffffff,#333,ffffff);
       }
     }
   }

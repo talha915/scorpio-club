@@ -14,11 +14,12 @@ class SomeNotableScorpios extends Component {
   }
 
   render() {
+    const data= this.props.someNotableKey;
     return (
       <section id="some-notable-scorpios">
         <div className="wrapper">
-          <h3 className="some-notable-scorpios-heading">Some Notable Scorpios</h3>
-          <h4 className="some-notable-scorpios-subheading">With our drag and drop system you can create pages in minutes!</h4>
+          <h3 className="some-notable-scorpios-heading">{data.heading}</h3>
+          <h4 className="some-notable-scorpios-subheading">{data.subheading}</h4>
           <div className="some-notable-scorpios-collection-container">
             <div className="some-notable-scorpios-collection-row">
               <img className="some-notable-scorpios-collection-image" src="./images/Bill Gates.jpg" />

@@ -13,7 +13,7 @@ import SomeNotableScorpios from './SomeNotableScorpios';
 import BecomeOneOfUs from './BecomeOneOfUs';
 import LetsBeInTouch from './LetsBeInTouch';
 import Footer from './Footer';
-
+import testReducer from '../actions/index'
 class App extends Component {
 
   constructor() {
@@ -21,24 +21,25 @@ class App extends Component {
   }
 
   render() {
+    console.log("testReducer",this.props.testReducer);
+    let data=this.props.testReducer;
     return (
+      
       <div className="app">
-        <Hero />
-        <Promo />
-        <Promo />
-        <Promo />
-        <Promo />
-        <FromOurScropios />
-        <SomeNotableScorpios />
-        <BecomeOneOfUs />
-        <LetsBeInTouch />
-        <Footer />
+        
+        <Hero heroKey={data[0]}/>
+        <Promo promoKey={data[1]}/>
+        <Promo promoKey={data[1]}/>
+        <Promo promoKey={data[1]}/>
+        <Promo promoKey={data[1]}/>
+        <FromOurScropios fromscorpioKey={data[2]}/>
+        <SomeNotableScorpios someNotableKey={data[3]}/>
+        <BecomeOneOfUs becomeoneofusKey={data[4]}/>
+        <LetsBeInTouch letsbeintouchKey={data[5]}/>
+        <Footer footerKey={data[6]}/>
       </div>
     );
   }
-}
-
-App.propTypes = {
 }
 
 function mapStateToProps(state) {
@@ -47,4 +48,4 @@ function mapStateToProps(state) {
   };
 };
 
-export default connect(mapStateToProps, {})(App);
+export default connect(mapStateToProps)(App);
