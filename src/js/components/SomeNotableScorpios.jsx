@@ -2,11 +2,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux'
-
-// ########## Import Containers Here ##########
-
-// ########## Import Components Here ##########
-
+import Gallery from './Gallery.jsx';
+import Data from '../../data/Data.js';
 class SomeNotableScorpios extends Component {
 
   constructor() {
@@ -18,17 +15,14 @@ class SomeNotableScorpios extends Component {
     return (
       <section id="some-notable-scorpios">
         <div className="wrapper">
-          <h3 className="some-notable-scorpios-heading">{data.heading}</h3>
-          <h4 className="some-notable-scorpios-subheading">{data.subheading}</h4>
+          <h3 className="some-notable-scorpios-heading">{data.sectionHeading}</h3>
+          <h4 className="some-notable-scorpios-subheading">{data.sectionH3}</h4>
           <div className="some-notable-scorpios-collection-container">
             <div className="some-notable-scorpios-collection-row">
-              <img className="some-notable-scorpios-collection-image" src="./images/Bill Gates.jpg" />
-              <img className="some-notable-scorpios-collection-image" src="./images/Bill Gates.jpg" />
-              <img className="some-notable-scorpios-collection-image" src="./images/Bill Gates.jpg" />
-              <img className="some-notable-scorpios-collection-image" src="./images/Bill Gates.jpg" />
-              <img className="some-notable-scorpios-collection-image" src="./images/Bill Gates.jpg" />
-              <img className="some-notable-scorpios-collection-image" src="./images/Bill Gates.jpg" />
-
+            <Gallery
+              sectionTitle={data.sectionTitle}
+              someNotableScorpiosData={data.someNotableScorpiosData}
+            /> 
             </div>
             <button className="some-notable-scorpios-button">See More</button>
           </div>

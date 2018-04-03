@@ -19,8 +19,8 @@ class Footer extends Component {
       <section id="footer">
         <div className="wrapper">
           <div className="footer-container-left">
-            <p className="footer-heading">{data.heading}</p><br></br><br></br>
-            <p className="footer-disclaimerleft">{data.disclaimer}</p>
+            <p className="footer-heading">{data.sectionHeading}</p><br></br><br></br>
+            <p className="footer-disclaimerleft">{data.sectionPara}</p>
           </div>
           <div className="footer-container-right">
             <p className="footer-heading"></p>

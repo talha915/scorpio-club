@@ -20,9 +20,9 @@ class Hero extends Component {
         <div className="wrapper">
           <div className="hero-content-container">
             <img className="hero-logo" src="./images/scorpio-club-white.png" />
-            <h1 className="hero-heading">{data.heading}</h1>
-            <h3 className="hero-subheading">{data.subheading}</h3>
-            <h4 className="hero-text">{data.subheadingmessage}</h4>
+            <h1 className="hero-heading">{data.sectionTitle}</h1>
+            <h3 className="hero-subheading">{data.sectionH3}</h3>
+            <h4 className="hero-text">{data.sectionH4}</h4>
             <button className="hero-button">Let Me In</button>
           </div>
         </div>

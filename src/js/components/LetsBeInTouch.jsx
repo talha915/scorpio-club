@@ -18,8 +18,8 @@ class LetsBeInTouch extends Component {
     return (
       <section id="lets-be-in-touch">
         <div className="wrapper">
-          <h3 className="lets-be-in-touch-heading">{data.heading}</h3>
-          <h4 className="lets-be-in-touch-subheading">{data.message}</h4>
+          <h3 className="lets-be-in-touch-heading">{data.sectionHeading}</h3>
+          <h4 className="lets-be-in-touch-subheading">{data.sectionH3}</h4>
           <form action="" className="form form-inline" >
             <div className="form" >
               <label className="sr-only" htmlFor="email">Email:</label>
