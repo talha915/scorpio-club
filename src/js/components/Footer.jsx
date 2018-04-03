@@ -21,6 +21,7 @@ class Footer extends Component {
           <div className="footer-container-left">
             <p className="footer-heading">{data.sectionHeading}</p><br></br><br></br>
             <p className="footer-disclaimerleft">{data.sectionPara}</p>
+            
           </div>
           <div className="footer-container-right">
             <p className="footer-heading"></p>
@@ -28,10 +29,14 @@ class Footer extends Component {
               <a href="#" target="_blank"><i className="fab fa-facebook fa-2x"></i></a>
               <a href="#" target="_blank"><i className="fab fa-twitter-square fa-2x"></i></a>
               <a href="#" target="_blank"><i className="fab fa-instagram fa-2x"></i></a>
+              
             </div>
           </div>
+          
           <div className="clear"></div>
+          
         </div>
+        
       </section>
     );
   }

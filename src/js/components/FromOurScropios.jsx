@@ -28,6 +28,7 @@ class FromOurScorpios extends Component {
             </div>
             
             <button className="from-our-scorpios-button">See More</button>
+            <div className="filler"></div>
           </div>
         </div>
       </section>

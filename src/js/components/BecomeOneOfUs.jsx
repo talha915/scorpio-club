@@ -21,6 +21,7 @@ class BecomeOneOfUs extends Component {
           <h3 className="become-one-of-us-heading">{data.sectionHeading}</h3>
           <h4 className="become-one-of-us-subheading">{data.sectionH3}</h4>
           <button className="become-one-of-us-button">Contact Us</button>
+          <div className="filler"></div>
         </div>
       </section>
     );

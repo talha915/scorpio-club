@@ -1,9 +1,12 @@
 #lets-be-in-touch {
   width: 100%;
-  height: 350px;
+  
   background: $background-image-color url('./images/get-in-touch.jpg') no-repeat center;
   background-size: cover;
   .wrapper {
+    .filler{
+      padding-top:60px;
+    }
     @include wrapper($wrapper-width);
     .lets-be-in-touch-heading {
       @include H3(center, $accent-color, 60px);

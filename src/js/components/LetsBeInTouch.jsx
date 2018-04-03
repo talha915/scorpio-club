@@ -29,6 +29,7 @@ class LetsBeInTouch extends Component {
               
             </div>
             <button className="form-button">Subscribe</button>
+            <div className="filler"></div>
           </form>
         </div>
       </section>

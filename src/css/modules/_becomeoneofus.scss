@@ -4,6 +4,9 @@
   background: $background-image-color url('./images/become-a-scorpio.jpg') no-repeat center;
   background-size: cover;
   .wrapper {
+    .filler{
+      padding-top:60px;
+    }
     @include wrapper($wrapper-width);
     .become-one-of-us-heading {
       @include H3(center, $primary-color, 60px);
