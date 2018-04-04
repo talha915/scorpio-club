@@ -1,1 +1,3 @@
-export const FILL_ME = 'FILL_ME';
+const FILL_ME = 'FILL_ME';
+
+export default FILL_ME;

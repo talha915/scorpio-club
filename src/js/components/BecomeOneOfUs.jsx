@@ -1,40 +1,29 @@
-// ########## Import Dependencies Here ##########
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux'
-import App from './App.jsx';
-// ########## Import Containers Here ##########
+import React from 'react';
+// import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+// import App from './App.jsx';
 
-// ########## Import Components Here ##########
+const BecomeOneOfUs = (props) => {
+  const data = props.becomeoneofusKey;
+  return (
+    <section id="become-one-of-us">
+      <div className="wrapper">
+        <h3 className="become-one-of-us-heading">{data.sectionHeading}</h3>
+        <h4 className="become-one-of-us-subheading">{data.sectionH3}</h4>
+        <button className="become-one-of-us-button">Contact Us</button>
+        <div className="filler" />
+      </div>
+    </section>
+  );
+};
 
-class BecomeOneOfUs extends Component {
+/* BecomeOneOfUs.propTypes = {
+} */
 
-  constructor() {
-    super();
-  }
-
-  render() {
-    let data= this.props.becomeoneofusKey;
-    return (
-      <section id="become-one-of-us">
-        <div className="wrapper">
-          <h3 className="become-one-of-us-heading">{data.sectionHeading}</h3>
-          <h4 className="become-one-of-us-subheading">{data.sectionH3}</h4>
-          <button className="become-one-of-us-button">Contact Us</button>
-          <div className="filler"></div>
-        </div>
-      </section>
-    );
-  }
-}
-
-BecomeOneOfUs.propTypes = {
-}
-
-function mapStateToProps(state) {
+/* function mapStateToProps(state) {
   return {
     key: null
   };
-};
+}; */
 
-export default connect(mapStateToProps, {})(BecomeOneOfUs);
+export default connect(null, {})(BecomeOneOfUs);

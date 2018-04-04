@@ -1,45 +1,43 @@
 // ########## Import Dependencies Here ##########
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux'
-import Gallery from './Gallery.jsx';
-import Data from '../../data/Data.js';
-class SomeNotableScorpios extends Component {
+import React from 'react';
+import { shape, string } from 'prop-types';
+import { connect } from 'react-redux';
+import Gallery from './Gallery';
 
-  constructor() {
-    super();
-  }
-
-  render() {
-    const data= this.props.someNotableKey;
-    return (
-      <section id="some-notable-scorpios">
-        <div className="wrapper">
-          <h3 className="some-notable-scorpios-heading">{data.sectionHeading}</h3>
-          <h4 className="some-notable-scorpios-subheading">{data.sectionH3}</h4>
-          <div className="some-notable-scorpios-collection-container">
-            <div className="some-notable-scorpios-collection-row">
+const SomeNotableScorpios = (props) => {
+  const { someNotableKey } = props;
+  return (
+    <section id="some-notable-scorpios">
+      <div className="wrapper">
+        <h3 className="some-notable-scorpios-heading">{someNotableKey.sectionHeading}</h3>
+        <h4 className="some-notable-scorpios-subheading">{someNotableKey.sectionH3}</h4>
+        <div className="some-notable-scorpios-collection-container">
+          <div className="some-notable-scorpios-collection-row">
             <Gallery
-              sectionTitle={data.sectionTitle}
-              someNotableScorpiosData={data.someNotableScorpiosData}
-            /> 
-            </div>
-            <button className="some-notable-scorpios-button">See More</button>
-            <div className="filler"></div>
+              sectionTitle={someNotableKey.sectionTitle}
+              someNotableScorpiosData={someNotableKey.someNotableScorpiosData}
+            />
           </div>
+          <button className="some-notable-scorpios-button">See More</button>
+          <div className="filler" />
         </div>
-      </section>
-    );
-  }
-}
-
-SomeNotableScorpios.propTypes = {
-}
-
-function mapStateToProps(state) {
-  return {
-    key: null
-  };
+      </div>
+    </section>
+  );
 };
 
-export default connect(mapStateToProps, {})(SomeNotableScorpios);
+SomeNotableScorpios.propTypes = {
+  someNotableKey: shape({
+    sectionHeading: string.isRequired,
+    sectionH3: string.isRequired,
+    sectionTitle: string.isRequired,
+  }).isRequired,
+};
+
+/* function mapStateToProps() {
+  return {
+    state: null,
+  };
+} */
+
+export default connect(null, {})(SomeNotableScorpios);

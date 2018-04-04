@@ -1,20 +1,18 @@
-import React, {Component} from 'react';
-import PropTypes from 'prop-types';
-import {connect} from 'react-redux';
+import React, { Component } from 'react';
+// import PropTypes from 'prop-types';
+// import {connect} from 'react-redux';
 import { shape, string } from 'prop-types';
-import Data from '../../data/Data.js';
-
-
+// import Data from '../../data/Data.js';
 
 export default class Gallery extends Component {
-
   fromOurScorpiosRender() {
     const { fromOurScorpiosData } = this.props;
     return (
-        fromOurScorpiosData.map((image, k) => {
+      fromOurScorpiosData.map((image, k) => {
         const postImg = fromOurScorpiosData[k].postImg;
         return (
           <div
+            //key={Math.random()}
             key={k}
             className="from-our-scorpios-gallery"
           >
@@ -24,9 +22,9 @@ export default class Gallery extends Component {
               alt="from our scorpios gallery item"
             />
           </div>
-        )
+        );
       })
-    )
+    );
   }
 
   someNotableScorpiosRender() {
@@ -37,6 +35,7 @@ export default class Gallery extends Component {
         return (
           <div
             key={k}
+            //key={k.Math.random()}
             className="some-notable-scorpios-gallery"
           >
             <img
@@ -45,26 +44,39 @@ export default class Gallery extends Component {
               alt="some notable scorpios gallery item"
             />
           </div>
-        )
+        );
       })
-    )
+    );
   }
+
+  /* content() {
+     const { sectionTitle } = this.props;
+     if (sectionTitle === 'From Our Scorpios'){
+       return this.fromOurScorpiosRender()
+     }
+     else if (sectionTitle === 'Some Notable Scorpios'){
+       return this.someNotableScorpiosRender()
+     } 
+   } */
 
   render() {
     const { sectionTitle } = this.props;
-    return(
+
+    return (
       <div id="gallery">
         {
-          sectionTitle === 'From Our Scorpios' && this.fromOurScorpiosRender() 
-          || 
-          sectionTitle === "Some Notable Scorpios" && this.someNotableScorpiosRender() 
+          sectionTitle === 'From Our Scorpios' && this.fromOurScorpiosRender()
+          ||
+          sectionTitle === 'Some Notable Scorpios' && this.someNotableScorpiosRender()
+          // sectionTitle
+          // this.content()
         }
       </div>
     );
   }
 }
 
-/*Gallery.propTypes = {
+Gallery.propTypes = {
   sectionTitle: string.isRequired,
   fromOurScorpiosData: shape({
     postImg: string.isRequired,
@@ -72,5 +84,4 @@ export default class Gallery extends Component {
   someNotableScorpiosData: shape({
     postImg: string.isRequired,
   }).isRequired,
-}
-*/
+} ;

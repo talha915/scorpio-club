@@ -1,8 +1,8 @@
 import { FILL_ME } from '../constants';
 
-export function firstAction(value) {
+export default function firstAction(value) {
   return {
     type: FILL_ME,
-    payload: value
+    payload: value,
   };
-};
+}
